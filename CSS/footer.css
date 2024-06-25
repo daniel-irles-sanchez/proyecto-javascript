@@ -1,0 +1,49 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.s-footer {
+    width: 30%;
+    margin-top: 20px;
+    display: flex;
+	justify-content: center;
+}
+.redes {
+    display: flex;
+	flex-direction: column;
+    margin-left: 120px;
+
+}
+.red-social {
+    display: flex;
+	align-items: center;
+	flex-direction: row;
+    margin-bottom: 10px;
+}
+.red-social img {
+    filter: opacity(80%) invert(100%);
+    margin-right: 15px;
+}
+.direccion {
+    margin-top: 40px;
+    color: gray;
+}
+
+.info-legal {
+    display: flex;
+    flex-direction: column;
+}
+.titulo-informacion-legal {
+    font-size: 20px;
+}
+
+.texto-informacion-legal {
+    margin-top: 10px;
+    margin-right: 20px;
+    color: rgb(204, 204, 204);
+    text-align: justify;
+    
+}
