@@ -193,7 +193,7 @@ function contratar() {
 
 
     if (nombre && apellidos && telefono && email && servicioMarcado && fechaMarcada) {
-        window.location = "/HTML/paga.html"
+        window.location = "../HTML/paga.html"
     } else {
         alert("Debes rellenar todos los campos para enviar el formulario.")
     }
