@@ -101,7 +101,7 @@ function crearCardDestino(rutaImagen, nombre, descripcion) {
 
 function cargarDestinos() {
     $.ajax({
-        url: "/DATA/destinos.json",
+        url: "./DATA/destinos.json",
         type: "GET",
         dataType: "json",
         success: function (data) {
