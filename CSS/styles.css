@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    padding: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.content {
+    margin-top: 50px;
+}
+.seccion {
+    height: calc(100vh - 50px);
+    background-color: rgb(18, 18, 18);
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-fondo-s {
+    opacity: .1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.s1, .s2, .s3, .s4, .s5 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+}
+
+.s-text {
+    align-self: center;
+    width: 600px;
+    margin-left: 200px;
+    font-size: 23px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    text-align-last: left;
+    position: relative;
+    font-weight: 500;
+    line-height: 35px;
+    z-index: 1;
+}
+
+.s-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.s1 img {
+    align-self: flex-end;
+    right: 0px;
+    float: right;
+    position: absolute;
+}
+
+.fotos-destinos {
+    align-self: center;
+    right: 0px;
+    float: right;
+    position: absolute;
+    width: 800px;
+    height: 500px;
+}
+.foto-destino {
+    width: 500px;
+    position: inherit;
+    z-index: 2;
+    border-radius: 10px;
+    display: none;
+}
+.foto-destino-2 {
+    width: 500px;
+    position: inherit;
+    margin-top: 200px;
+    margin-left: 250px;
+    z-index: 1;
+    border-radius: 10px;
+    display: none;
+}
+
+
+
+
+
+.destinos-recomendados {
+    /* background-color: red; */
+    align-self: center;
+    margin-right: 0px;
+    margin-left: 50px;
+    width: 900px;
+    height: 600px;
+    display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+}
+.card-destinos-recomendados {
+    width: 260px;
+    height: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-size: 160%;  /* Tamaño inicial del fondo */
+    background-position: center;
+    z-index: 2;
+    border-radius: 5px;
+    transition: background-size 0.2s ease; /* Transición suave para el background-size */
+}
+
+.card-destinos-recomendados:hover {
+    background-size: 150%; /* Aumenta el tamaño del fondo en hover */
+}
+
+.card-destinos-recomendados-clon {
+
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    background-size: cover;  /* Tamaño inicial del fondo */
+    background-position: center;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.nombre, .descripcion {
+
+    background-color: rgba(0, 0, 0, 0.756);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+
+}
+.a {
+    margin-left: 30px;
+
+}
+
+.descripcion {
+
+    border-radius:  0px 0px 5px 5px;
+    display: none;
+    font-weight: 100;
+    padding: 20px;
+}
+
+
+
+
+.valoraciones {
+
+
+
+    width: 900px;
+    height: 600px;
+    align-self: center;
+    display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+
+	flex-direction: column;
+}
+
+#scrollContainer {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.scrollItem {
+    
+    position: absolute;
+    width: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: top 0.5s linear;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+    border: 1px solid gray;
+    background-color: rgba(128, 128, 128, 0.425);
+    border-radius: 5px;
+    right: 0;
+  }
+
+
+
+.scroll-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: calc(100vh - 50px);
+}
+.scroll-item {
+    scroll-snap-align: start;
+    height: calc(100vh - 50px);
+}
+hr {
+    border-color: gray;
+}
+.s5 {
+    height: 40vh;
+    display: flex;
+	justify-content: space-around;
+    flex-direction: row;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="/CSS/nav.css">
+	<link rel="stylesheet" href="/CSS/footer.css">
+	<link rel="stylesheet" href="/CSS/presupuesto.css">
+
+	<title>Travel Snaps - Presupuesto</title>
+</head>
+
+<body>
+	<nav class="nav">
+		<div class="titulo-nav">Travel Snaps</div>
+
+		<div class="botones">
+			<a href="/index.html" class="boton">Inicio</a>
+			<a href="/HTML/galeria.html" class="boton">Galería</a>
+			<a href="/HTML/presupuesto.html" class="boton">Presupuesto</a>
+			<a href="/HTML/contacto.html" class="boton">Contacto</a>
+		</div>
+
+
+	</nav>
+	<div class="seccion-presupuesto">
+		<div class="caja">
+			<h2 class="titulo">
+				Datos personales
+			</h2>
+			<form action="/form" method="get">
+				<label for="nombre">Nombre</label><br>
+				<input oninput="recibirInformacion(this)" type="text" name="nombre" id="nombre">
+				<br>
+				<label for="apellidos">Apellidos</label><br>
+				<input oninput="recibirInformacion(this)" type="text" name="apellidos" id="apellidos">
+				<br>
+				<label for="telefono">Número de teléfono</label><br>
+				<input oninput="recibirInformacion(this)" type="tel" name="telefono" id="telefono">
+				<br>
+				<label for="email">Dirección de correo electrónico</label><br>
+				<input oninput="recibirInformacion(this)" type="email" name="email" id="email">
+			</form>
+		</div>
+		<hr>
+		<div class="caja">
+			<h2 class="titulo">
+				Presupuesto
+			</h2>
+			<form action="/form" method="get">
+				<label class="radio-option">
+					<input onchange="infoRadio()" class="selector-radio" type="radio" name="option" value="1" hidden>
+					<span class="radio-btn"></span>
+					<span>Fotos para tu viaje</span>
+				</label><br>
+				<label class="radio-option">
+					<input onchange="infoRadio()" class="selector-radio" type="radio" name="option" value="2" hidden>
+					<span class="radio-btn"></span>
+					<span>Fotos en uno de nuestros viajes</span>
+				</label><br>
+				<label class="radio-option">
+					<input onchange="infoRadio()" class="selector-radio" type="radio" name="option" value="3" hidden>
+					<span class="radio-btn"></span>
+					<span>Sesión de fotos</span>
+				</label>
+				<br><br>
+				<span>Fecha de contratación</span>
+				<br>
+				<input id="dia" oninput="comprobacionFecha(this)" class="input-fecha" type="number"><span
+					style="color: gray;">/</span>
+				<input id="mes" oninput="comprobacionFecha(this)" class="input-fecha" type="number"><span
+					style="color: gray;">/</span>
+				<input id="anyo" oninput="comprobacionFecha(this)" class="input-fecha anyo" type="number">
+
+				<br><br><br>
+
+				<span class="e">Extras</span>
+				<div class="item-extra">
+					<input onchange="infoExtras()" class="extra" type="checkbox" id="extra-1">
+					<label class="extra-btn" for="extra-1"></label>
+					<span>Impresión de fotos</span><br>
+				</div>
+				<div class="item-extra">
+					<input onchange="infoExtras()" class="extra" type="checkbox" id="extra-2">
+					<label class="extra-btn" for="extra-2"></label>
+					<span>Grandes distancias</span><br>
+				</div>
+				<div class="item-extra">
+					<input onchange="infoExtras()" class="extra" type="checkbox" id="extra-3">
+					<label class="extra-btn" for="extra-3"></label>
+					<span>Libro de fotos</span><br>
+				</div>
+				<div class="item-extra">
+					<input onchange="infoExtras()" class="extra" type="checkbox" id="extra-4">
+					<label class="extra-btn" for="extra-4"></label>
+					<span>Fotografía con dron</span><br>
+				</div>
+
+			</form>
+		</div>
+		<hr>
+		<div class="caja">
+			<h2 class="titulo">
+				Información
+			</h2>
+			<div class="info-titulo">Datos personales</div>
+			<div class="info-texto">
+				Contratante
+				<div class="info-js" id="nombre-apellidos-info"></div>
+			</div>
+			<br>
+
+			<div class="info-texto">
+				Teléfono
+				<div class="info-js" id="telefono-info"></div>
+			</div>
+			<br>
+
+			<div class="info-texto">
+				Email
+				<div class="info-js" id="email-info"></div>
+			</div>
+			<br>
+
+			<div class="info-titulo">Resumen de Pago</div>
+			<div class="info-texto">
+				Servicio
+				<div class="info-js" id="servicio"></div>
+			</div>
+			<br>
+
+			<div class="info-texto" id="extras">
+				Extras
+
+			</div>
+			<br>
+			<div class="info-titulo">Fecha</div>
+			<div class="info-texto" id="fecha-mostrar"></div>
+			<br>
+			<div class="total" id="precio-total">Total: 0€</div>
+			<br><br><br>
+			<div class="item-extra">
+				<input onchange="comprobarCondicionesAceptadas(this)" class="extra" type="checkbox" id="condiciones">
+				<label class="extra-btn" for="condiciones"></label>
+				<span>Aceto los <a style="text-decoration: none; color: #364aff;" href="/HTML/terms.html">términos y
+						condiciones</a></span><br>
+			</div>
+			<br>
+			<button onclick="contratar()" class="boton-contratar" id="boton-contratar">Contratar</button>
+
+
+		</div>
+
+	</div>
+	<footer>
+		<div class="s-footer redes">
+			<div class="red-social">
+				<img src="/IMG/logos/instagram.png" alt="" height="35">
+				<span>Instagram</span>
+			</div>
+			<div class="red-social">
+				<img src="/IMG/logos/twitter.png" alt="" height="35">
+				<span>Twitter</span>
+			</div>
+			<div class="red-social">
+				<img src="/IMG/logos/youtube.png" alt="" height="35">
+				<span>YouTube</span>
+			</div>
+		</div>
+		<hr>
+		<div class="s-footer direccion">
+			Dirección falsa ya puesta en la página de contacto y más información de cómo encontrar la empresa.
+		</div>
+		<hr>
+		<div class="s-footer info-legal">
+			<span class="titulo-informacion-legal">Información legal</span>
+			<span class="texto-informacion-legal">El contenido presente en este sitio web, incluyendo textos, gráficos,
+				logos y código fuente, es propiedad de [Tu Nombre o Alias] y está protegido por las leyes de derechos de
+				autor. No se permite la reproducción, distribución, comunicación pública y transformación de dichos
+				contenidos sin el permiso previo y expreso del propietario.</span>
+		</div>
+	</footer>
+	<script src="/JS/presupuesto.js"></script>
+</body>
+
+</html>

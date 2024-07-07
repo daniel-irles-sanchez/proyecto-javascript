@@ -1,0 +1,36 @@
+[
+    {
+      "titulo": "Safari en Kenia",
+      "descripcion": "Explora la vasta sabana africana y maravíllate con la diversidad de la vida silvestre en su hábitat natural. Desde el majestuoso Masai Mara hasta los impresionantes paisajes del Parque Nacional de Amboseli, captura la majestuosidad de los leones, elefantes y jirafas en su entorno natural.",
+      "imagen": "IMG/destinosSugeridos/safari.jpg"
+    },
+    {
+      "titulo": "Auroras Boreales en Noruega",
+      "descripcion": "Viaja al Círculo Polar Ártico y sé testigo del fenómeno celestial más espectacular: las auroras boreales. Nuestros fotógrafos capturan la magia de las luces del norte danzando en el cielo, ofreciendo una experiencia visual que nunca olvidarás.",
+      "imagen": "IMG/destinosSugeridos/aurora.jpg"
+    },
+    {
+      "titulo": "Playas de Tailandia",
+      "descripcion": "Relájate en las cristalinas playas de Tailandia y disfruta de paisajes paradisíacos. Desde las aguas turquesas de Phi Phi Island hasta los tranquilos atardeceres de Koh Samui, nuestras fotos reflejan la serenidad y belleza de estos destinos tropicales.",
+      "imagen": "IMG/destinosSugeridos/playas.jpg"
+    },
+    {
+      "titulo": "Montañas Rocosas en Canadá",
+      "descripcion": "Descubre la grandeza de las Montañas Rocosas, con sus imponentes picos y lagos cristalinos. Capturamos la magnificencia de este paisaje épico, permitiéndote explorar su belleza natural y la diversidad de su fauna a través de nuestras lentes.",
+      "imagen": "IMG/destinosSugeridos/montaña.jpg"
+    },
+    {
+      "titulo": "Templos de Japón",
+      "descripcion": "Sumérgete en la rica historia y cultura de Japón. Desde los antiguos templos de Kyoto hasta los modernos paisajes urbanos de Tokio, te llevaremos en un recorrido visual que combina la tradición con la modernidad, capturando la esencia del país del sol naciente.",
+      "imagen": "IMG/destinosSugeridos/templo.jpg"
+    },
+    {
+      "titulo": "Playas Negras en Islandia",
+      "descripcion": "Explora la majestuosidad de las Playas Negras en Islandia, donde la arena volcánica contrasta dramáticamente con las espumosas olas del Atlántico Norte. Desde la impresionante playa de Reynisfjara hasta las costas remotas de Vík, te llevaremos en un viaje visual que captura la belleza inigualable de estos paisajes únicos. Sumérgete en la tranquilidad de estos parajes donde la naturaleza muestra su poder y belleza, creando un escenario perfecto que combina el misterio con la magnificencia.",
+      "imagen": "IMG/destinosSugeridos/playa.jpg"
+    }
+
+
+
+  ]
+  
